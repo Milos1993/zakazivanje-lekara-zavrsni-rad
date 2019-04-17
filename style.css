@@ -49,19 +49,81 @@ li.nav-item.active {
   padding-left: 0;
 }
 
-.boja {
-  background-color: green;
-  
-  
-}
 .velikoSlovo {
   text-transform: capitalize;
 }
  
-div.col-sm-12.col-md-3.col-lg-3.boja {
+div.col-sm-12.col-md-6.col-lg-6.boja {
+  text-align: center; 
+  margin-top: 1p 
+ 
+ 
+}
+
+.srce {
+  color: white;
+  padding: 5px;
+} 
+
+.srce:hover {
+  color: red;
+  transition: 1000ms;
+  cursor: pointer;
+}
+
+h3 {
+  color: white;
+  cursor: pointer;
+}
+
+div.col-sm-12.col-md-6.col-lg-6
+ {
+  margin-top: 20px;
+}
+ul.informacije{
+  list-style: none;
+  margin: 10px 0 0 10px;
+  
+}
+
+footer.container-fluid {
+  background-color: #d9dce0;
   padding: 0;
 }
 
+form.vesti {
+  margin: 10px 0 0 10px;
+}
+
+ul.informacije li a {
+  text-decoration: none;
+  padding: 5px;
+}
+
+#logo2 {
+  margin: 10px 0 0 10px;
+
+}
+
+img#logo2.img-fluid {
+  width: 300px;
+}
+
+.ned {
+  background-color: lightgreen;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.pon-sub {
+  color: #fff;
+
+}
+
+div.col-sm-12.col-md-4.col-lg-4 {
+  padding-right: 0;
+}
 
 
 

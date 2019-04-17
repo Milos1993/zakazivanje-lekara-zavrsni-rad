@@ -16,7 +16,7 @@ function prikaziDoktora(korisnici) {
         <div class="col-sm-12 col-md-4 col-lg-4>
         <div class="card">
         <div class="card-body">
-            <img src="${doktor.picture.large}" class="card-img-top" alt="${doktor.name.first}">
+        <img src="${doktor.picture.large}" class="card-img-top" alt="${doktor.name.first}"> 
           <h5 class="card-title velikoSlovo">${doktor.name.first} ${doktor.name.last}</h5>
           <p class="card-text">Email: ${doktor.email}</p>
           <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -25,6 +25,7 @@ function prikaziDoktora(korisnici) {
       </div>
         
         `
+      
     }
 
     doktori.innerHTML = kartica
