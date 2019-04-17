@@ -55,7 +55,8 @@ li.nav-item.active {
  
 div.col-sm-12.col-md-6.col-lg-6.boja {
   text-align: center; 
-  margin-top: 1p 
+  margin-top: 1px;
+  background-color: #416FAB;
  
  
 }
