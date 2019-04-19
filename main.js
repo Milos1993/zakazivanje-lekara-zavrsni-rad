@@ -4,7 +4,7 @@
 // .then(podaci => prikaziDoktora(podaci))
 const doktori = document.getElementById('doktori');
 
-// function prikaziDoktora(korisnici) {
+
    
     let kartica = ``;
 
@@ -29,7 +29,7 @@ const doktori = document.getElementById('doktori');
     }
 
     doktori.innerHTML = kartica
-// }
+
 
 
 
