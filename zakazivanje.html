@@ -53,16 +53,24 @@
     <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12">
                 <form action="https://formspree.io/djordjevicmilos993@gmail.com" method="POST">
-                    <input type="text" name="name">
-                    <input type="email" name="_replyto">
-                    <input type="submit" value="Send">
+                  <label for="ime">Ime i prezime: </label>
+                    <input type="text" name="name" placeholder="Unesite vaše ime i prezime" required id="ime">
+                    <label for="email">Email adresa: </label>
+                    <input type="email" name="_replyto" required placeholder="Unesite email adresu" id="email">
+                    <label for="fix">Broj telefona: </label>
+                    <input type="num" id="fix" required value="+381" name="fiksni">
+                    <label for="mob">Broj mobilnog: </label>
+                    <input type="tel" name="mobilni" id="mob" value="+381 6" required>
+                    <label for="poruka">Unesite poruku</label><br>
+                    <textarea name="poruka" id="poruka" cols="30" rows="10" placeholder="Unesite poruku"></textarea>
+                    <input type="submit" value="Posalji">
                   </form>
         </div>
 
     </div>
   </div>
 
-  </div>
+  
   <footer class="container-fluid">
     <div class="row">
       <div class="col-sm-12 col-md-4 col-lg-4">
