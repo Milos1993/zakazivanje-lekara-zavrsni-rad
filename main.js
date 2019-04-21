@@ -30,6 +30,7 @@ const doktori = document.getElementById('doktori');
 
     doktori.innerHTML = kartica
 
+   
 
 
 
