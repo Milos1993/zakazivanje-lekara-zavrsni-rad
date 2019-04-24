@@ -1,7 +1,5 @@
 
-// fetch('https://randomuser.me/api/?results=6')
-// .then(response => response.json())
-// .then(podaci => prikaziDoktora(podaci))
+
 const doktori = document.getElementById('doktori');
 
 

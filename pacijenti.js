@@ -1,6 +1,6 @@
 const pacijenti = {
-    "results": [{"username" : "miske", "password" : "123", "fullName" : "Milos Djordjevic"},
-    {"username" : "ivan", "password" : "jadnik", "fullName" : "Ivan Varioc" }]
+    "results": [{"username" : "milos", "password" : "123", "fullName" : "Milos Djordjevic"},
+    {"username" : "ivan", "password" : "1234", "fullName" : "Ivan Jovanovic" }]
 }
 
 function setCookie(cname, cvalue, exdays) {
@@ -30,6 +30,7 @@ function getCookie(cname) {
 
 
 function logIn () {
+    
     var userName = document.getElementById('username').value;
     var password = document.getElementById('password').value;
     for (let i = 0; i < pacijenti.results.length; i++) {
@@ -38,13 +39,18 @@ function logIn () {
             alert("Ulogovali ste se");
             setCookie("trenutniKorisnik", pacijent.fullName, 1);
             setCookie("trenutnaLozinka", pacijent.password, 1);
+            
+            
 
             location.href = "index.html";
+            
             return 0;
         }
+        
     }
 
     alert("Ne postoji korisnik ili je sifra pogresna");
+   
 
 }
 
@@ -54,8 +60,13 @@ function postaviTrenutnogKorisnika () {
     ivan.innerHTML = trenutniKorisnik;
 } 
 
+
+
+
+
 function prikaziKorisnika () {
     postaviTrenutnogKorisnika();
+   
     var imePrezime = getCookie("trenutniKorisnik");
     var lozinka = getCookie('trenutnaLozinka');
 
@@ -64,7 +75,10 @@ function prikaziKorisnika () {
 
     var sifra = document.getElementById('lozinka');
     sifra.innerHTML = lozinka;
+
+
 }
+
 
 function logOut () {
     setCookie("trenutniKorisnik", "", 1);

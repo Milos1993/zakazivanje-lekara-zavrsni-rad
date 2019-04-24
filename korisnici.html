@@ -46,19 +46,32 @@
             <a class="dropdown-item" href="#">Dijagnostika</a>
           </div>
         </li>
-        <li>
-      <a id="trenutniKorisnik" href="#"></a>
+        <li class="nav-item">
+      <a  class="nav-link" id="trenutniKorisnik" href="#"></a>
   
         </li>
       </ul>
     </div>
   </nav>
-
-  <form >
-      <label for="fullName">Ime i prezime: </label>
+  <table class="table table-bordered table-hover table-dark">
+    <legend>Istorija pacijenta</legend>
+      <thead>
+        <tr>
+          <th scope="col">Ime i prezime</th>   
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <th scope="row" id="fullName"></th>
+           
+          </tr>
+          </tbody>
+      </table>
+  <form action="index.html">
+      <!-- <label for="fullName">Ime i prezime: </label>
       <h5 id="fullName"></h5>
       <label for="lozinka">Lozinka: </label>
-      <h5 id="lozinka"></h5>
+      <h5 id="lozinka"></h5> -->
       <input type="submit" value="Logout" onclick="logOut()" >
   </form>
   </div>
