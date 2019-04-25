@@ -49,10 +49,12 @@ function logIn () {
             
             return 0;
         }
+        location.href = "logIn.html";
         
     }
-
+    
     alert("Ne postoji korisnik ili je sifra pogresna");
+    
    
 
 }
