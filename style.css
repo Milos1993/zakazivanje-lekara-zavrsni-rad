@@ -62,7 +62,9 @@ div.col-sm-12.col-md-6.col-lg-6.boja {
  
 }
 table.table {
-  width: 50%;
+  width: auto;
+  overflow-y: hidden;
+  text-align: center;
   
 }
 

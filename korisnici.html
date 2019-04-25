@@ -47,34 +47,44 @@
           </div>
         </li>
         <li class="nav-item">
-      <a  class="nav-link" id="trenutniKorisnik" href="#"></a>
-  
+          <a class="nav-link" id="trenutniKorisnik" href="#"></a>
+
         </li>
       </ul>
     </div>
   </nav>
-  <table class="table table-bordered table-hover table-dark">
-    <legend>Istorija pacijenta</legend>
-      <thead>
-        <tr>
-          <th scope="col">Ime i prezime</th>   
-        </tr>
-      </thead>
-      <tbody>
+  <div class="container">
+    <div class="row">
+
+      <table class="table table-bordered table-hover table-dark w.auto">
+
+        <thead>
           <tr>
-            <th scope="row" id="fullName"></th>
-           
+            <th scope="col">Ime i prezime</th>
+            <th scope="col">Datum pregleda</th>
+            <th scope="col">JMBG</th>
+            <th scope="col">Anamneza</th>
+            <th scope="col">Terapija</th>
+            <th scope="col">kontrola</th>
           </tr>
-          </tbody>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="fullName"></td>
+            <td id="datum"></td>
+            <td id="jmbg"></td>
+            <td id="anamneza"></td>
+          </tr>
+        </tbody>
       </table>
-  <form action="index.html">
-      <!-- <label for="fullName">Ime i prezime: </label>
-      <h5 id="fullName"></h5>
-      <label for="lozinka">Lozinka: </label>
-      <h5 id="lozinka"></h5> -->
-      <input type="submit" value="Logout" onclick="logOut()" >
-  </form>
+
+    </div>
   </div>
+  <form action="index.html">
+
+    <input class="btn btn-primary" type="submit" value="Logout" onclick="logOut()">
+  </form>
+
   <footer class="container-fluid">
     <div class="row">
       <div class="col-sm-12 col-md-4 col-lg-4">
@@ -127,12 +137,12 @@
 
 
 
-  
+
 
   <script src="Assets/jQuery/jquery-3.4.0.min.js"></script>
   <script src="Assets/bootstrap-4/js/bootstrap.min.js"></script>
   <script src="pacijenti.js"></script>
-  
+
 </body>
 
 </html>

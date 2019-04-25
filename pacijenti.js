@@ -1,22 +1,22 @@
 const pacijenti = {
-    "results": [{"username" : "milos", "password" : "123", "fullName" : "Milos Djordjevic"},
-    {"username" : "ivan", "password" : "1234", "fullName" : "Ivan Jovanovic" }]
+    "results": [{"username" : "milos", "password" : "123", "fullName" : "Miloš Djordjević", "datum" : "25.04.2019", "JMBG" : "0202993722229", "anamneza" : "Leči se od 2016.god od povišenog pritiska"},
+    {"username" : "ivan", "password" : "1234", "fullName" : "Ivan Jovanović", "datum" : "17.03.2019", "JMBG" : "3108993722228", "anamneza" : "Dva dana se oseća nestabilno i ima vrtoglavicu"}]
 }
 
 function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
+    let d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+ d.toUTCString();
+    let expires = "expires="+ d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + "; path=/";
     
 }
 
 function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-      var c = ca[i];
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+      let c = ca[i];
       while (c.charAt(0) == ' ') {
         c = c.substring(1);
       }
@@ -31,14 +31,17 @@ function getCookie(cname) {
 
 function logIn () {
     
-    var userName = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
+    let userName = document.getElementById('username').value;
+    let password = document.getElementById('password').value;
     for (let i = 0; i < pacijenti.results.length; i++) {
-        var pacijent = pacijenti.results[i];
+        let pacijent = pacijenti.results[i];
         if (pacijent.username == userName && pacijent.password == password ) {
             alert("Ulogovali ste se");
             setCookie("trenutniKorisnik", pacijent.fullName, 1);
             setCookie("trenutnaLozinka", pacijent.password, 1);
+            setCookie("datumPregleda", pacijent.datum, 1);
+            setCookie("jedBroj", pacijent.JMBG, 1);
+            setCookie('anamneza', pacijent.anamneza, 1);
             
             
 
@@ -55,10 +58,13 @@ function logIn () {
 }
 
 function postaviTrenutnogKorisnika () {
-    var trenutniKorisnik = getCookie("trenutniKorisnik");
-    var ivan = document.getElementById("trenutniKorisnik");
+    let trenutniKorisnik = getCookie("trenutniKorisnik");
+    let ivan = document.getElementById("trenutniKorisnik");
     ivan.innerHTML = trenutniKorisnik;
-} 
+  
+   
+    }
+ 
 
 
 
@@ -67,14 +73,23 @@ function postaviTrenutnogKorisnika () {
 function prikaziKorisnika () {
     postaviTrenutnogKorisnika();
    
-    var imePrezime = getCookie("trenutniKorisnik");
-    var lozinka = getCookie('trenutnaLozinka');
+    let imePrezime = getCookie("trenutniKorisnik");
+    let datum = getCookie("datumPregleda");
+    let jedinstveniBroj = getCookie('jedBroj');
+    let anamneza = getCookie('anamneza');
 
-    var fullName = document.getElementById('fullName');
+    let fullName = document.getElementById('fullName');
     fullName.innerHTML = imePrezime;
 
-    var sifra = document.getElementById('lozinka');
-    sifra.innerHTML = lozinka;
+
+    let datumPregleda = document.getElementById('datum');
+    datumPregleda.innerHTML = datum;
+
+    let jmbg = document.getElementById('jmbg');
+    jmbg.innerHTML = jedinstveniBroj;
+
+    let anamneza1 = document.getElementById('anamneza');
+    anamneza1.innerHTML = anamneza;
 
 
 }
