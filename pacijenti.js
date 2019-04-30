@@ -30,7 +30,7 @@ function getCookie(cname) {
 
 
 function logIn () {
-    
+ 
     let userName = document.getElementById('username').value;
     let password = document.getElementById('password').value;
     for (let i = 0; i < pacijenti.results.length; i++) {
@@ -48,12 +48,16 @@ function logIn () {
             location.href = "index.html";
             
             return 0;
+        } else {
+            alert("Ne postoji korisnik ili je sifra pogresna");
+            location.href = "logIn.html";
         }
-        location.href = "logIn.html";
+       
         
     }
     
-    alert("Ne postoji korisnik ili je sifra pogresna");
+    
+    
     
    
 
@@ -100,4 +104,5 @@ function prikaziKorisnika () {
 function logOut () {
     setCookie("trenutniKorisnik", "", 1);
     setCookie("trenutnaLozinka", "", 1);
+    
 }
