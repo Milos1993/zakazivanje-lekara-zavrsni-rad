@@ -1,10 +1,12 @@
 *{
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  
 }
 
 li.nav-item {
@@ -14,9 +16,13 @@ li.nav-item {
 nav {
   
   background-color: #fff;
-  /* border-radius: 5px;
-  padding: 15px; */
+  
 }
+div.form-row {
+  margin-left: 10px;
+ 
+}
+
 
 a.nav-link {
   color: #416FAB !important;
@@ -65,8 +71,11 @@ table.table {
   width: auto;
   overflow-y: hidden;
   text-align: center;
+  background-color: #416FAB;
+  color: #fff;
   
 }
+
 
 
 .srce {
@@ -96,8 +105,16 @@ ul.informacije{
 }
 
 footer.container-fluid {
-  background-color: #d9dce0;
+  background-color: #ced2db;
   padding: 0;
+  margin-top: 35px;
+
+}
+div.col-sm-12.col-md-4.col-lg-4.lokacija {
+  margin-top: 35px;
+}
+div.col-sm-12.col-md-4.col-lg-4.vreme {
+  margin-top: 35px;
 }
 
 form.vesti {
@@ -134,6 +151,10 @@ div.col-sm-12.col-md-4.col-lg-4 {
   padding-right: 0;
 }
 
+ul.radnoVreme li {
+  list-style: none;
+  padding-top: 10px;
+}
 
 
 
