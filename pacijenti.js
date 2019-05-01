@@ -49,18 +49,16 @@ function logIn () {
             
             return 0;
         } else {
-            alert("Ne postoji korisnik ili je sifra pogresna");
-            location.href = "logIn.html";
+      
+            setTimeout(function() {
+                document.location.href = "logIn.html"
+            }, 500);
+
         }
-       
-        
+         
     }
     
-    
-    
-    
-   
-
+    alert("Ne postoji korisnik ili je sifra pogresna");
 }
 
 function postaviTrenutnogKorisnika () {
