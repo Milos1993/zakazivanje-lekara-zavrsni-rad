@@ -51,8 +51,17 @@
             <input type="tel" id="fix" placeholder="Unesite broj telefona" name="fiksni"><br>
             <label class="tekst" for="mob">Broj mobilnog: </label>
             <input type="tel" name="mobilni" id="mob" placeholder="Unesite broj mobilnog" required><br>
-            <label class="tekst" for="poruka">Unesite poruku</label><br>
-            <textarea name="poruka" id="poruka" cols="20" rows="5" placeholder="Unesite poruku"></textarea>
+            <label for="lekar">Izaberite doktora: </label>
+            <select id="lekar" name="Izabrani doktor" required>
+              
+              <option value="Dr Milos">Dr Milos</option>
+              <option value="Dr Slavica">Dr Slavica</option>
+              <option value="Dr Jelena">Dr Jelena</option>
+              <option value="Dr Ivan" >Dr Ivan</option>
+              <option value="Izaberite doktora" disabled  selected>Izaberite doktora</option>
+            </select>
+            <!-- <label class="tekst" for="poruka">Unesite poruku</label><br>
+            <textarea name="poruka" id="poruka" cols="20" rows="5" placeholder="Unesite poruku"></textarea> -->
             <input class="btn  salji" type="submit" value="Posalji">
             <input class="btn  brisi" type="reset" value="Obriši">
           </form>
