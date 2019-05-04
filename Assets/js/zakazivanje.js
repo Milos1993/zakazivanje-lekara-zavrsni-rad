@@ -4,6 +4,5 @@ function makeReservation() {
     form.setAttribute("action", "https://formspree.io/djordjevicmilos993@gmail.com");
 
     document.body.appendChild(form);
-    form.submit();
-   
+    form.submit();   
 }

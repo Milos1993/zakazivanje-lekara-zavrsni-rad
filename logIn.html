@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" />
     <link rel="stylesheet" href="Assets/bootstrap-4/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="Assets/css/style.css" />
 </head>
 
 <body onload="postaviTrenutnogKorisnika()">
@@ -34,18 +34,6 @@
                     <a class="nav-link" href="#">O nama</a>
                 </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Usluge
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#srednji">Hirurgija</a>
-                        <a class="dropdown-item" href="#">Dermatologija</a>
-                        <a class="dropdown-item" href="#">Laboratorija</a>
-                        <a class="dropdown-item" href="#">Dijagnostika</a>
-                    </div>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" id="trenutniKorisnik" href="korisnici.html"></a>
                 </li>
@@ -55,69 +43,77 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-3 col-lg-3">
-            <form action="index.html">
-                <div class="form-row">
-                    
-                    <div class=" col-4-lg">
-                        <label for="username">Korisničko ime: </label>
-                        <input type="text" id="username" placeholder="Unesite korisničko ime" name="user" required
-                            class="form-control"><br>
-                        <label for="password">Lozinka: </label>
-                        <input type="password" id="password" placeholder="Unesite lozinku" name="password" required
-                            class="form-control"><br>
-                        <input class="btn btn-primary" type="submit" value="Prijavi se" onclick="logIn()">
+                <form action="index.html">
+                    <div class="form-row">
+
+                        <div class=" col-4-lg">
+                            <label for="username">Korisničko ime: </label>
+                            <input type="text" id="username" placeholder="Unesite korisničko ime" name="user" required
+                                class="form-control"><br>
+                            <label for="password">Lozinka: </label>
+                            <input type="password" id="password" placeholder="Unesite lozinku" name="password" required
+                                class="form-control"><br>
+                            <input class="btn btn-primary " type="submit" value="Prijavi se" onclick="logIn()">
+                        </div>
+
                     </div>
-                    
-                </div>
-            </form>
-        </div>
-        <div class="col-sm-12 col-md-9 col-lg-9">
-            
-        </div>
-       
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-9 col-lg-9">
+
+            </div>
+
         </div>
     </div>
 
-        <footer class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                    <a class="navbar-brand" href="index.html"><img id="logo2" class="img-fluid" src="Assets/img/logo.png"
-                            alt="logo"></a>
-                    <form class="vesti">
-                        <label for="newsletter">NEWSLETTER</label>
-                        <br>
-                        <input type="email" name="newsletter" id="newsletter" placeholder="Unesite svoj e-mail">
-                        <button class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                    <ul class="informacije">
-                        <li class="a"><a href="#"><i class="fa fa-map mr-5"></i> Borisavljivićeva 80,
-                                Beograd</a></li>
-                        <li class="a"><a href="#"><i class="fa fa-phone mr-5"></i> Tel/Fax: +381 111
-                                222 11</a></li>
-                        <li class="a"><a href="#"><i class="fa fa-phone-square mr-5"></i> +381 65 22
-                                2333</a></li>
-                        <li class="a"><a href="#"><i class="fa fa-envelope mr-5"></i>
-                                djordjevicmilos993@gmail.com</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4 lokacija">
-                    <h4>Lokacija</h4>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.916173154451!2d20.474797114923703!3d44.78251428669068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70677c0f8aef%3A0x6ba0f2b5d2167743!2sBorisavljevi%C4%87eva+80%2C+Beograd!5e0!3m2!1sen!2srs!4v1555499272270!5m2!1sen!2srs"
-                        width="350" height="300" style="border:0" allowfullscreen></iframe>
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4 vreme">
-                    <h4>Radno Vreme</h4>
-                    <ul class="radnoVreme">
-                        <li><i class="far fa-clock"></i> Radnim danima: <span class="pon-sub"> 08:00 - 19:00</span>
-                        </li>
-                        <li><i class="far fa-clock"></i> Subota: <span class="pon-sub"> 08:00 - 14:00</span></li>
-                        <li><i class="far fa-clock"></i> Nedelja: <span class="ned">Ne radimo</span></li>
-                    </ul>
-                </div>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <a class="navbar-brand" href="index.html"><img id="logo2" class="img-fluid" src="Assets/img/logo.png"
+                        alt="logo"></a>
+                <form class="vesti">
+                    <label for="newsletter">NEWSLETTER</label>
+                    <br>
+                    <input type="email" name="newsletter" id="newsletter" placeholder="Unesite svoj e-mail">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <ul class="informacije">
+                    <li class="a"><a href="#"><i class="fa fa-map mr-5"></i> Borisavljivićeva 80,
+                            Beograd</a></li>
+                    <li class="a"><a href="#"><i class="fa fa-phone mr-5"></i> Tel/Fax: +381 111
+                            222 11</a></li>
+                    <li class="a"><a href="#"><i class="fa fa-phone-square mr-5"></i> +381 65 22
+                            2333</a></li>
+                    <li class="a"><a href="#"><i class="fa fa-envelope mr-5"></i>
+                            djordjevicmilos993@gmail.com</a></li>
+                </ul>
             </div>
-        </footer>
+            <div class="col-sm-12 col-md-4 col-lg-4 lokacija">
+                <h4>Lokacija</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.916173154451!2d20.474797114923703!3d44.78251428669068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70677c0f8aef%3A0x6ba0f2b5d2167743!2sBorisavljevi%C4%87eva+80%2C+Beograd!5e0!3m2!1sen!2srs!4v1555499272270!5m2!1sen!2srs"
+                    width="350" height="300" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 vreme">
+                <h4>Radno Vreme</h4>
+                <ul class="radnoVreme">
+                    <li><i class="far fa-clock"></i> Radnim danima: <span class="pon-sub"> 08:00 - 19:00</span>
+                    </li>
+                    <li><i class="far fa-clock"></i> Subota: <span class="pon-sub"> 08:00 - 14:00</span></li>
+                    <li><i class="far fa-clock"></i> Nedelja: <span class="ned">Ne radimo</span></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 pozadina">
+            <p class="copyright">&copy; By Miloš Đorđević</p>
+          </div>
+        </div>
+      </div>
 
 
 
@@ -132,11 +128,9 @@
 
 
 
-
-
-        <script src="Assets/jQuery/jquery-3.4.0.min.js"></script>
-        <script src="Assets/bootstrap-4/js/bootstrap.min.js"></script>
-        <script src="pacijenti.js"></script>
+    <script src="Assets/jQuery/jquery-3.4.0.min.js"></script>
+    <script src="Assets/bootstrap-4/js/bootstrap.min.js"></script>
+    <script src="Assets/js/pacijenti.js"></script>
 
 </body>
 

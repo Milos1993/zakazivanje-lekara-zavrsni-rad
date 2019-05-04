@@ -1,41 +1,40 @@
 const pacijenti = {
-    "results": [{"username" : "milos", "password" : "123", "fullName" : "Miloš Djordjević", "datum" : "25.04.2019", "JMBG" : "0202993722229", "anamneza" : "Leči se od 2016.god od povišenog pritiska", "terapija" : "Enalapril 2,5mg 1 dnevno", "kontrola" : "Za dva meseca"},
-    {"username" : "ivan", "password" : "1234", "fullName" : "Ivan Jovanović", "datum" : "17.03.2019", "JMBG" : "3108993722228", "anamneza" : "Dva dana se oseća nestabilno i ima vrtoglavicu", "terapija" : "Urutal 8mg", "kontrola" : "Kontrola za dve nedelje sa osnovnim laboratorijskim analizama"}]
+    "results": [{ "username": "milos", "password": "123", "fullName": "Miloš Djordjević", "datum": "25.04.2019", "JMBG": "0202993722229", "anamneza": "Leči se od 2016.god od povišenog pritiska", "terapija": "Enalapril 2,5mg 1 dnevno", "kontrola": "Za dva meseca" },
+    { "username": "ivan", "password": "1234", "fullName": "Ivan Jovanović", "datum": "17.03.2019", "JMBG": "3108993722228", "anamneza": "Dva dana se oseća nestabilno i ima vrtoglavicu", "terapija": "Urutal 8mg", "kontrola": "Kontrola za dve nedelje sa osnovnim laboratorijskim analizama" }]
 }
 
 function setCookie(cname, cvalue, exdays) {
     let d = new Date();
-    d.setTime(d.getTime() + (365*24*60*60*1000));
-    let expires = "expires="+ d.toUTCString();
+    d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + "; path=/";
-    
+
 }
 
 function getCookie(cname) {
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
-    for(let i = 0; i <ca.length; i++) {
-      let c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
     }
     return "";
-  }
+}
 
+function logIn() {
 
-
-function logIn () {
- 
     let userName = document.getElementById('username').value;
     let password = document.getElementById('password').value;
     for (let i = 0; i < pacijenti.results.length; i++) {
         let pacijent = pacijenti.results[i];
-        if (pacijent.username == userName && pacijent.password == password ) {
+        if (pacijent.username === userName && pacijent.password === password) {
+
             alert("Ulogovali ste se");
             setCookie("trenutniKorisnik", pacijent.fullName, 365);
             setCookie("trenutnaLozinka", pacijent.password, 365);
@@ -45,36 +44,29 @@ function logIn () {
             setCookie("terapija", pacijent.terapija, 365);
             setCookie("kontrola", pacijent.kontrola, 365);
 
-            
-               location.href = "index.html"
-           
-     
             return 0;
-        } else {
-      
-            setTimeout(function() {
-                document.location.href = "logIn.html"
-            }, 500);
 
-           
         }
-         
     }
-    
-    alert("Ne postoji korisnik ili je sifra pogresna");
+    $(document).ready(
+        function greska() {
+            window.location.href = "logIn.html";
+        },
+        alert("Ne postoji korisnik ili je sifra pogresna")
+    )
 }
 
-function postaviTrenutnogKorisnika () {
+function postaviTrenutnogKorisnika() {
     let trenutniKorisnik = getCookie("trenutniKorisnik");
     let korisnik = document.getElementById("trenutniKorisnik");
     korisnik.innerHTML = trenutniKorisnik;
-
+    if (trenutniKorisnik) {
+        document.getElementById("milos").innerHTML = "";
     }
- 
+}
 
-function prikaziKorisnika () {
-    postaviTrenutnogKorisnika();
-   
+function prikaziKorisnika() {
+
     let imePrezime = getCookie("trenutniKorisnik");
     let datum = getCookie("datumPregleda");
     let jedinstveniBroj = getCookie('jedBroj');
@@ -84,7 +76,6 @@ function prikaziKorisnika () {
 
     let fullName = document.getElementById('fullName');
     fullName.innerHTML = imePrezime;
-
 
     let datumPregleda = document.getElementById('datum');
     datumPregleda.innerHTML = datum;
@@ -100,13 +91,11 @@ function prikaziKorisnika () {
 
     let kontrola1 = document.getElementById('kontrola');
     kontrola1.innerHTML = kontrola;
-    
 
 }
 
+function logOut() {
+    setCookie("trenutniKorisnik", "", 365);
+    setCookie("trenutnaLozinka", "", 365);
 
-function logOut () {
-    setCookie("trenutniKorisnik", "", 1);
-    setCookie("trenutnaLozinka", "", 1);
-    
 }

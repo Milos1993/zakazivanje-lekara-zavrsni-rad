@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" />
   <link rel="stylesheet" href="Assets/bootstrap-4/css/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="Assets/css/style.css" />
 </head>
 
 <body>
@@ -34,41 +34,29 @@
           <a class="nav-link" href="#">O nama</a>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Usluge
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#srednji">Hirurgija</a>
-            <a class="dropdown-item" href="#">Dermatologija</a>
-            <a class="dropdown-item" href="#">Laboratorija</a>
-            <a class="dropdown-item" href="#">Dijagnostika</a>
-          </div>
-        </li>
       </ul>
     </div>
   </nav>
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-6">
-        <div class="form-row"> 
-        <form action="https://formspree.io/djordjevicmilos993@gmail.com" method="POST">
+      <div class="col-sm-12 col-md-12 col-lg-6 forma">
+        <div class="form-row">
+          <form action="https://formspree.io/djordjevicmilos993@gmail.com" method="POST">
 
-          <label for="ime">Ime i prezime: </label>
-          <input type="text" name="name" placeholder="Unesite vaše ime i prezime" required id="ime"><br>
-          <label for="email">Email adresa: </label>
-          <input type="email" name="_replyto" required placeholder="Unesite email adresu" id="email"><br>
-          <label for="fix">Broj telefona: </label>
-          <input type="tel" id="fix" placeholder="Unesite broj telefona" name="fiksni"><br>
-          <label for="mob">Broj mobilnog: </label>
-          <input type="tel" name="mobilni" id="mob" placeholder="Unesite broj mobilnog telefona" required><br>
-          <label for="poruka">Unesite poruku</label><br>
-          <textarea name="poruka" id="poruka" cols="20" rows="5" placeholder="Unesite poruku"></textarea>
-          <input type="submit" value="Posalji">
-          <input type="reset" value="Obriši">
-        </form>
-      </div>
+            <label class="tekst" for="ime">Ime i prezime: </label>
+            <input type="text" name="name" placeholder="Unesite vaše ime i prezime" required id="ime"><br>
+            <label class="tekst" for="email">Email adresa: </label>
+            <input type="email" name="_replyto" required placeholder="Unesite email adresu" id="email"><br>
+            <label class="tekst" for="fix">Broj telefona: </label>
+            <input type="tel" id="fix" placeholder="Unesite broj telefona" name="fiksni"><br>
+            <label class="tekst" for="mob">Broj mobilnog: </label>
+            <input type="tel" name="mobilni" id="mob" placeholder="Unesite broj mobilnog" required><br>
+            <label class="tekst" for="poruka">Unesite poruku</label><br>
+            <textarea name="poruka" id="poruka" cols="20" rows="5" placeholder="Unesite poruku"></textarea>
+            <input class="btn  salji" type="submit" value="Posalji">
+            <input class="btn  brisi" type="reset" value="Obriši">
+          </form>
+        </div>
       </div>
       <div class="col-sm-12 col-md-12 col-lg-6"></div>
 
@@ -115,7 +103,13 @@
     </div>
   </footer>
 
-
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 pozadina">
+        <p class="copyright">&copy; By Miloš Đorđević</p>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -132,9 +126,9 @@
 
   <script src="Assets/jQuery/jquery-3.4.0.min.js"></script>
   <script src="Assets/bootstrap-4/js/bootstrap.min.js"></script>
-  <script src="korisnici.js"></script>
-  <script src="zakazivanje.js"></script>
-  <script src="main.js"></script>
+  <script src="Assets/js/korisnici.js"></script>
+  <script src="Assets/js/zakazivanje.js"></script>
+  <script src="Assets/js/main.js"></script>
 </body>
 
 </html>
