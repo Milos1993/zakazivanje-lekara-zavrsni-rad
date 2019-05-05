@@ -150,7 +150,7 @@ form.vesti {
 
 ul.informacije li a {
 	text-decoration: none;
-	padding: 5px;
+	
 }
 
 #logo2 {
@@ -218,25 +218,25 @@ label.tekst {
 
 input#ime {
   margin-bottom: 5px;
-  margin-left: 4px;
-  border-radius: 5px;
+  margin-left: 5px;
+  border-radius: 8px;
 }
 
 input#email {
 	margin-bottom: 5px;
 	margin-left: 8px;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 input#fix {
 	margin-bottom: 5px;
-	margin-left: 8px;
-	border-radius: 5px;
+	margin-left: 9px;
+	border-radius: 8px;
 }
 
 input#mob {
 	margin-bottom: 5px;
-	border-radius: 5px;
+	border-radius: 8px;
 }
 
 select#lekar {
@@ -247,7 +247,7 @@ select#lekar {
 
 
 input#datum {
-	border-radius: 5px;
+	border-radius: 8px;
 	margin-bottom: 5px;
 	margin-left: 8px;
 }
@@ -288,11 +288,6 @@ input.btn.brisi:hover {
   transition: 0.5s;
   color: #fff;
 }
-
-
-
-
-
 
 
 #button {
@@ -356,6 +351,8 @@ h4.h4 {
 	margin-top: 20px;
 }
 
-li.style {
+img.img-fluid.zgrada {
+	margin-top: 63px;
+	margin-bottom: 20px;
 	
 }
