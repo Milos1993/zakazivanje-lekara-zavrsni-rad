@@ -35,6 +35,9 @@ a.nav-link {
 	float: right;
 	margin-right: 50px;
 }
+iframe.img-fluid {
+	height: 350px;
+}
 
 .wifi {
 	transform: rotate(230deg);
@@ -138,6 +141,7 @@ div.col-sm-12.col-md-4.col-lg-4.lokacija {
 
 div.col-sm-12.col-md-4.col-lg-4.vreme {
 	margin-top: 35px;
+	
 }
 
 form.vesti {
@@ -191,8 +195,17 @@ div.col-sm-12.col-md-12.col-lg-12.pozadina {
 div.col-sm-12.col-md-12.col-lg-6.forma {
 	background-color: #416FAB;
 	padding: 10px;
+	border-radius: 10px;
+}
+h2.formular {
+	font-weight: 700;
+	color: #fff;
+
 }
 
+hr.linija {
+	border: 1px solid #fff;
+}
 form {
 	padding: 10px;
 }
@@ -231,10 +244,7 @@ select#lekar {
 	margin-bottom: 5px;
 	margin-left: 8px;
 }
-input.btn#logout {
-	background-color: #416FAB;
-	color: #fff;
-}
+
 
 input#datum {
 	border-radius: 5px;
@@ -242,14 +252,27 @@ input#datum {
 	margin-left: 8px;
 }
 
+p.obavestenje {
+	color: #fff;
+	margin-top: 10px;
+}
+
+h2.tim {
+	font-weight: 700;
+	color: #86888c;
+}
+
 input.btn.salji {
-  margin-bottom: 15px;
+  margin-bottom: 0;
   background-color: #fff;
   color: black;
 }
+div.row.dugmici {
+	margin: 3px;
+}
 
 input.btn.brisi {
-  margin-bottom: 15px;
+  margin-left: 5px;
   background-color: #fff;
   color: black;
 }
@@ -265,3 +288,65 @@ input.btn.brisi:hover {
   transition: 0.5s;
   color: #fff;
 }
+
+
+
+
+
+
+
+#button {
+	display: inline-block;
+	background-color: #CE1B75;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color .3s, 
+	  opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+  }
+
+  i.fas.fa-chevron-up{
+	  text-align: center;
+	  font-size: 30px;
+	  margin-top: 10px;
+	  color: #fff;
+  }
+  #button:hover {
+	cursor: pointer;
+	background-color: #416FAB;
+  }
+  #button:active {
+	background-color: #416FAB;
+  }
+  #button.show {
+	opacity: 1;
+	visibility: visible;
+  }
+  
+  /* Styles for the content section */
+  
+  
+  @media (min-width: 500px) {
+	.content {
+	  width: 43%;
+	}
+	#button {
+	  margin: 30px;
+	}
+  }
+  .content h1 {
+	margin-bottom: -10px;
+	color: #03a9f4;
+	line-height: 1.5;
+  }
+  .content h3 {
+	font-style: italic;
+	color: #96a2a7;
+  }
