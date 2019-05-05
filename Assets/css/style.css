@@ -206,20 +206,30 @@ label.tekst {
 input#ime {
   margin-bottom: 5px;
   margin-left: 4px;
+  border-radius: 5px;
 }
 
 input#email {
 	margin-bottom: 5px;
 	margin-left: 8px;
+	border-radius: 5px;
 }
 
 input#fix {
 	margin-bottom: 5px;
 	margin-left: 8px;
+	border-radius: 5px;
 }
 
 input#mob {
 	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+select#lekar {
+	border-radius: 5px;
+	margin-bottom: 5px;
+	margin-left: 8px;
 }
 input.btn.salji {
   margin-bottom: 15px;
