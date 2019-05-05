@@ -51,17 +51,27 @@
             <input type="tel" id="fix" placeholder="Unesite broj telefona" name="fiksni"><br>
             <label class="tekst" for="mob">Broj mobilnog: </label>
             <input type="tel" name="mobilni" id="mob" placeholder="Unesite broj mobilnog" required><br>
-            <label for="lekar">Izaberite doktora: </label>
+            <label class="tekst" for="lekar">Izaberite doktora: </label>
             <select id="lekar" name="Izabrani doktor" required>
-              
-              <option value="Dr Milos">Dr Milos</option>
-              <option value="Dr Slavica">Dr Slavica</option>
-              <option value="Dr Jelena">Dr Jelena</option>
-              <option value="Dr Ivan" >Dr Ivan</option>
+              <optgroup label="Pulmolog">
+                <option value="Dr Branislava Pavić">Dr Branislava Pavić</option>
+                <option value="Dr Dragan Đurić">Dr Dragan Đurić</option>
+              </optgroup>
+              <optgroup label="Radiolog">
+                <option value="Dr Danica Obradović">Dr Danica Obradović</option>
+                <option value="Dr Doran Radulović">Dr Goran Radulović</option>
+              </optgroup>
+              <optgroup label="Kardiolog">
+                <option value="Dr Dragana Milenković">Dr Dragana Milenković</option>
+              </optgroup>
+              <optgroup label="Specijalista kliničke biohemije">
+                <option value="Dr Borislav Kikanović">Dr Borislav Kikanović</option>
+              </optgroup> 
+            
               <option value="Izaberite doktora" disabled  selected>Izaberite doktora</option>
-            </select>
-            <!-- <label class="tekst" for="poruka">Unesite poruku</label><br>
-            <textarea name="poruka" id="poruka" cols="20" rows="5" placeholder="Unesite poruku"></textarea> -->
+            </select><br>
+            <label class="tekst" for="poruka">Unesite poruku</label><br>
+            <textarea name="poruka" id="poruka" cols="20" rows="5" placeholder="Unesite poruku"></textarea>
             <input class="btn  salji" type="submit" value="Posalji">
             <input class="btn  brisi" type="reset" value="Obriši">
           </form>

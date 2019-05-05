@@ -16,6 +16,7 @@ const doktori = document.getElementById('doktori');
         <div class="card-body">
         <img src="${doktor.picture.large}" value=" class="card-img-top" alt="${doktor.name.first}"> 
           <h5 class="card-title velikoSlovo">${doktor.name.first} ${doktor.name.last}</h5>
+          <h5 class="velikoSlovo">${doktor.name.specijalnost}</h5>
           <p class="card-text">Email: ${doktor.email}</p>
           <a href="zakazivanje.html" class="btn btn-primary">Zakaži</a>
         </div>
