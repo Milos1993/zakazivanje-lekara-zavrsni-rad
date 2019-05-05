@@ -224,19 +224,24 @@ input#ime {
 
 input#email {
 	margin-bottom: 5px;
-	margin-left: 8px;
+	margin-left: 4px;
 	border-radius: 10px;
 }
 
 input#fix {
 	margin-bottom: 5px;
-	margin-left: 9px;
+	margin-left: 5px;
 	border-radius: 8px;
 }
 
 input#mob {
 	margin-bottom: 5px;
 	border-radius: 8px;
+	
+}
+
+div.col-sm-12 input#mob {
+	margin-left: 2px;
 }
 
 select#lekar {
