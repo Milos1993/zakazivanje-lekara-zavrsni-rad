@@ -45,19 +45,36 @@
       <div class="col-sm-12 col-md-12 col-lg-6 forma">
         <h2 class="formular">Formular</h2>
         <hr class="linija">
-        <div class="form-row">
+        
 
           <form action="https://formspree.io/djordjevicmilos993@gmail.com" method="POST">
-
-            <label class="tekst" for="ime">Ime i prezime: </label>
-            <input type="text" name="name" placeholder="Unesite vaše ime i prezime" required id="ime"><br>
-            <label class="tekst" for="email">Email adresa: </label>
-            <input type="email" name="_replyto" required placeholder="Unesite email adresu" id="email"><br>
-            <label class="tekst" for="fix">Broj telefona: </label>
-            <input type="tel" id="fix" placeholder="Unesite broj telefona" name="fiksni"><br>
-            <label class="tekst" for="mob">Broj mobilnog: </label>
-            <input type="tel" name="mobilni" id="mob" placeholder="Unesite broj mobilnog" required><br>
-            <label class="tekst" for="lekar">Izaberite doktora: </label>
+            <div class="form-row">
+              <div class="col">
+                <label class="tekst" for="ime">Ime i prezime: </label>
+            <input type="text" name="name" placeholder="Unesite vaše ime i prezime" required id="ime">
+              </div>
+            </div>
+            <div class="form-row">
+                <div class="col">
+                  <label class="tekst" for="email">Email adresa: </label>
+            <input type="email" name="_replyto" required placeholder="Unesite email adresu" id="email">
+                </div>
+              </div>
+              <div class="form-row">
+                  <div class="col">
+                    <label class="tekst" for="fix">Broj telefona: </label>
+            <input type="tel" id="fix" placeholder="Unesite broj telefona" name="fiksni">
+                  </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                       <label class="tekst" for="mob">Broj mobilnog: </label>
+            <input type="tel" name="mobilni" id="mob" placeholder="Unesite broj mobilnog" required>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                      <div class="col">
+                         <label class="tekst" for="lekar">Izaberite doktora: </label>
             <select id="lekar" name="Izabrani doktor" required>
               <optgroup label="Pulmolog:">
                 <option value="Dr Branislava Pavić-pulmolog">Dr Branislava Pavić</option>
@@ -75,20 +92,34 @@
               </optgroup>
 
               <option value="Izaberite doktora" disabled selected>Izaberite doktora</option>
-            </select><br>
-            <label class="tekst" for="datum">Izaberite datum: </label>
+            </select>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                           <label class="tekst" for="datum">Izaberite datum: </label>
             <input type="date" name="Datum" id="datum" required>
-            <br>
-            <label class="tekst" for="poruka">Unesite poruku</label><br>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                          <div class="col">
+                            <label class="tekst" for="poruka">Unesite poruku</label><br>
             <textarea name="poruka" id="poruka" cols="20" rows="5"></textarea>
-            <div class="row dugmici">
-              <input class="btn  salji" type="submit" value="Posalji">
+                          </div>
+                        </div>
+
+            
+            <div class="form-row dugmici">
+              <div class="col">
+                <input class="btn  salji" type="submit" value="Posalji">
               <input class="btn  brisi" type="reset" value="Obriši">
+              </div>
+              
             </div>
             <p class="obavestenje">* pregled nije zakazan sve dok Vam mi ne potvrdimo</p>
 
           </form>
-        </div>
+        
       </div>
       <div class="col-sm-12 col-md-12 col-lg-6"></div>
 
