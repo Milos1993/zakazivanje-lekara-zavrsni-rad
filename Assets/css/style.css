@@ -320,10 +320,10 @@ input.btn.brisi:hover {
   }
   #button:hover {
 	cursor: pointer;
-	background-color: #416FAB;
+	background-color: #CE1B75;
   }
   #button:active {
-	background-color: #416FAB;
+	background-color: #CE1B75;
   }
   #button.show {
 	opacity: 1;
@@ -341,12 +341,21 @@ input.btn.brisi:hover {
 	  margin: 30px;
 	}
   }
-  .content h1 {
-	margin-bottom: -10px;
-	color: #03a9f4;
-	line-height: 1.5;
-  }
-  .content h3 {
-	font-style: italic;
-	color: #96a2a7;
-  }
+div.col-sm-12.col-md-12.col-lg-12.oNama {
+	background-color: #CE1B75;
+	padding: 10px;
+}
+
+h1.onama {
+	color: #fff;
+	font-weight: 700;
+	margin-left: 40px;
+}
+
+h4.h4 {
+	margin-top: 20px;
+}
+
+li.style {
+	
+}

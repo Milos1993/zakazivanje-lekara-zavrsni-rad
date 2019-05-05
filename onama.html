@@ -14,7 +14,7 @@
 </head>
 
 <body onload="postaviTrenutnogKorisnika()">
-        <a id="button"><i class="fas fa-chevron-up"></i></a>
+    <a id="button"><i class="fas fa-chevron-up"></i></a>
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html"><img class="img-fluid" src="Assets/img/logo.png" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -33,6 +33,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="onama.html">O nama</a>
                 </li>
+                <li id="milos" class="nav-item">
+                    <a class="nav-link" href="logIn.html">Prijavi se</a>
+                </li>
 
                 <li class="nav-item">
                     <a class="nav-link" id="trenutniKorisnik" href="korisnici.html"></a>
@@ -40,31 +43,76 @@
             </ul>
         </div>
     </nav>
-    <div class="container">
+
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-12 col-md-3 col-lg-3">
-                <form action="index.html">
-                    <div class="form-row">
-
-                        <div class=" col-4-lg">
-                            <label for="username">Korisničko ime: </label>
-                            <input type="text" id="username" placeholder="Unesite korisničko ime" name="user" required
-                                class="form-control"><br>
-                            <label for="password">Lozinka: </label>
-                            <input type="password" id="password" placeholder="Unesite lozinku" name="password" required
-                                class="form-control"><br>
-                            <input class="btn btn-primary " type="submit" value="Prijavi se" onclick="logIn()">
-                        </div>
-
-                    </div>
-                </form>
+            <div class="col-sm-12 col-md-12 col-lg-12 oNama">
+                <h1 class="onama">O nama</h1>
             </div>
-            <div class="col-sm-12 col-md-9 col-lg-9">
-
-            </div>
-
         </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-lg-8">
+                <h4 class="h4">O nama</h4>
+                <hr>
+                <p class="prvi">M-Medic je iz male ordinacije izrastao u prvu privatnu bolnicu u Srbiji, akreditovanu
+                    prema
+                    najvišim evropskim standardima kvaliteta <a href="https://www.isqua.org/">(ISQua)</a> koja u
+                    luksuzno opremljenom prostoru na preko
+                    3.000 m2 poseduje najmoderniju medicinsku opremu i kompletan bolnički sistem. Za 24 godine
+                    postojanja, preko 300.000 pacijenata nam je ukazalo poverenje.</p>
+                <p class="drugi">
+                    Svakog dana, 24 sata dnevno, oko 400 stalno zaposlenih i skoro 400 eminentnih doktora, vrhunskih
+                    stručnjaka u svim medicinskim specijalnostima je posvećeno lečenju dece i odraslih. Nama su
+                    pacijenti uvek na prvom mestu i trudimo se da budemo tamo gde smo im najpotrebniji.
+                </p>
+                <p class="treci">
+                    Mi u M-Medic-u podržavamo medicinu zasnovanu na dokazima, svakog dana se usavršavamo i razvijamo
+                    da bismo vama pružili najbolje od zdravstva. Brojne nagrade svedoče o našim uspesima koje smo
+                    zajedno sa vama postigli i na koje smo ponosni. Tome svedoči i kontinuiran rast od 20% koji
+                    beležimo u poslovanju.
+                </p>
+                <p>
+                    Već 24 godine sledimo našu viziju da:
+                </p>
+                <ul>
+                    <li class="style">Budemo lideri privatnog zdravstva u regionu</li>
+                    <hr>
+                    <li class="style">Podignemo nivo zdravstvene usluge i zdravstvenog sistema u Srbiji</li>
+                    <hr>
+                    <li class="style">Stvorimo instituciju bolju od njenih pojedinaca</li>
+                    <hr>
+                    <li class="style">Podržavamo privatnu inicijativu i aktivno učestvujemo u kreiranju boljeg poslovnog ambijenta</li>
+                    <hr>
+                    <li class="style">Poslujemo na najvišem stepenu društvene odgovornosti</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <footer class="container-fluid">
         <div class="row">
@@ -93,7 +141,7 @@
             <div class="col-sm-12 col-md-4 col-lg-4 lokacija">
                 <h4>Lokacija</h4>
                 <iframe class="img-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.916173154451!2d20.474797114923703!3d44.78251428669068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70677c0f8aef%3A0x6ba0f2b5d2167743!2sBorisavljevi%C4%87eva+80%2C+Beograd!5e0!3m2!1sen!2srs!4v1555499272270!5m2!1sen!2srs"
-                    width="350"  style="border:0" allowfullscreen></iframe>
+                    width="350" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4 vreme">
                 <h4>Radno Vreme</h4>
@@ -109,11 +157,11 @@
 
     <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12 pozadina">
-            <p class="copyright">&copy; By Miloš Đorđević</p>
-          </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 pozadina">
+                <p class="copyright">&copy; By Miloš Đorđević</p>
+            </div>
         </div>
-      </div>
+    </div>
 
 
 
