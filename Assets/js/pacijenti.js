@@ -11,7 +11,6 @@ function setCookie(cname, cvalue, exdays) {
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     let expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + "; path=/";
-
 }
 
 function getCookie(cname) {
@@ -50,9 +49,9 @@ function logIn() {
             setCookie("kontrola", pacijent.kontrola, 365);
 
             return 0;
-
         }
     }
+
     // Ukoliko korisnik je uneo pogresne podatke ostani na istoj stranici
     $(document).ready(
         function greska() {
@@ -61,13 +60,16 @@ function logIn() {
         alert("Ne postoji korisnik ili je sifra pogresna")
     )
 }
+
 // Ispisivanje trenutnog ulogovanog korsnika u navigacioni bar
 function postaviTrenutnogKorisnika() {
     let trenutniKorisnik = getCookie("trenutniKorisnik");
     let korisnik = document.getElementById("trenutniKorisnik");
     korisnik.innerHTML = trenutniKorisnik;
     if (trenutniKorisnik) {
-        document.getElementById("milos").innerHTML = "";
+        let element = document.getElementById("milos");
+        element.style.display = "none";
+
     }
 }
 
@@ -97,14 +99,12 @@ function prikaziKorisnika() {
 
     let kontrola1 = document.getElementById('kontrola');
     kontrola1.innerHTML = kontrola;
-
 }
 // logout funkcija
 
 function logOut() {
     setCookie("trenutniKorisnik", "", 365);
     setCookie("trenutnaLozinka", "", 365);
-
 }
 
 var dugme = $('#button');

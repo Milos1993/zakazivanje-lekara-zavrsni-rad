@@ -19,6 +19,7 @@ $(window).scroll(function () {
     dugme.removeClass('show');
   }
 });
+
 // Click funkcija koja vraca korisnika na pocetak stranice za 300 milisekundi
 dugme.on('click', function (e) {
   e.preventDefault();

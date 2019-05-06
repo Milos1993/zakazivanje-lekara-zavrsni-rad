@@ -1,16 +1,16 @@
-Pacijenti – doktori – zakazivanje
+Pacijenti ï¿½ doktori ï¿½ zakazivanje
 
 Zavrsni rad:
 
 Na sajtu postoje 4 stranice:
 
-Pocetna
+   Pocetna
 		
-Zakazivanje
+   Zakazivanje
 
-O nama
+   O nama
 
-Prijavi se
+   Prijavi se
 
  Pocetna stranica :
 
@@ -18,25 +18,25 @@ Prijavi se
 
  
 
-Zakazivanje stranica 
+Zakazivanje stranica: 
 
 	Prikazuje formu u koju korisnik unosi svoje podatke, bira doktora i datum zeljenog pregleda.
 
 
 
-O nama stranica 
+O nama stranica:
 
 	nudi vise informacija o klinici.
 
 
 
-Prijavi se stranica 
+Prijavi se stranica: 
 
  	logIn stranica za prijavu pacijenata koji su vec posetili kliniku, pacijent je logovanjem u mogucnosti da vidi 	istoriju svojih prethodnih pregleda.
 
 
 
 Prijavi se:
-	Miloš Djordjevic: korisnicko ime: milos lozinka: 123
+	Milos Djordjevic: korisnicko ime: milos lozinka: 123
 	Ivan Jovanovic: korisnicko ime: ivan lozinka: 1234
 
