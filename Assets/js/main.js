@@ -1,11 +1,11 @@
 
-
+// Pozivanje id-a doktori i ubacivanje u konstantu
 const doktori = document.getElementById('doktori');
 
 
    
     let kartica = ``;
-
+// For loop da prodje kroz sve korisnike i pravi kartice za svakog posebno
     for(let i = 0; i < korisnici.results.length; i++) {
         const doktor = korisnici.results[i];
 
@@ -26,21 +26,21 @@ const doktori = document.getElementById('doktori');
         `
      
     }
-
+    // Ispisivanje na html stranicu
     doktori.innerHTML = kartica
 
    
-    var btn = $('#button');
-
+    var dugme = $('#button');
+// Scroll funkcija koja pod uslovom dodaje klasu/dugme ili brise 
     $(window).scroll(function() {
       if ($(window).scrollTop() > 300) {
-        btn.addClass('show');
+        dugme.addClass('show');
       } else {
-        btn.removeClass('show');
+        dugme.removeClass('show');
       }
     });
-    
-    btn.on('click', function(e) {
+    // Click funkcija koja vraca korisnika na pocetak stranice za 300 milisekundi
+    dugme.on('click', function(e) {
       e.preventDefault();
       $('html, body').animate({scrollTop:0}, '300');
     });

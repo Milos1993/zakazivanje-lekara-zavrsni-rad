@@ -35,6 +35,7 @@ a.nav-link {
 	float: right;
 	margin-right: 50px;
 }
+
 iframe.img-fluid {
 	height: 350px;
 }
@@ -141,7 +142,6 @@ div.col-sm-12.col-md-4.col-lg-4.lokacija {
 
 div.col-sm-12.col-md-4.col-lg-4.vreme {
 	margin-top: 35px;
-	
 }
 
 form.vesti {
@@ -150,7 +150,6 @@ form.vesti {
 
 ul.informacije li a {
 	text-decoration: none;
-	
 }
 
 #logo2 {
@@ -197,15 +196,16 @@ div.col-sm-12.col-md-12.col-lg-6.forma {
 	padding: 10px;
 	border-radius: 10px;
 }
+
 h2.formular {
 	font-weight: 700;
 	color: #fff;
-
 }
 
 hr.linija {
 	border: 1px solid #fff;
 }
+
 form {
 	padding: 10px;
 }
@@ -217,9 +217,9 @@ label.tekst {
 }
 
 input#ime {
-  margin-bottom: 5px;
-  margin-left: 5px;
-  border-radius: 8px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	border-radius: 8px;
 }
 
 input#email {
@@ -237,7 +237,6 @@ input#fix {
 input#mob {
 	margin-bottom: 5px;
 	border-radius: 8px;
-	
 }
 
 div.col-sm-12 input#mob {
@@ -249,7 +248,6 @@ select#lekar {
 	margin-bottom: 5px;
 	margin-left: 8px;
 }
-
 
 input#datum {
 	border-radius: 8px;
@@ -268,32 +266,32 @@ h2.tim {
 }
 
 input.btn.salji {
-  margin-bottom: 0;
-  background-color: #fff;
-  color: black;
+	margin-bottom: 0;
+	background-color: #fff;
+	color: black;
 }
+
 div.row.dugmici {
 	margin: 3px;
 }
 
 input.btn.brisi {
-  margin-left: 5px;
-  background-color: #fff;
-  color: black;
+	margin-left: 5px;
+	background-color: #fff;
+	color: black;
 }
 
-input.btn.salji:hover{
-  background-color: green;
-  transition: 0.5s;
-  color: #fff;
+input.btn.salji:hover {
+	background-color: green;
+	transition: 0.5s;
+	color: #fff;
 }
 
 input.btn.brisi:hover {
-  background-color: red;
-  transition: 0.5s;
-  color: #fff;
+	background-color: red;
+	transition: 0.5s;
+	color: #fff;
 }
-
 
 #button {
 	display: inline-block;
@@ -305,42 +303,42 @@ input.btn.brisi:hover {
 	position: fixed;
 	bottom: 30px;
 	right: 30px;
-	transition: background-color .3s, 
-	  opacity .5s, visibility .5s;
+	transition: background-color .3s, opacity .5s, visibility .5s;
 	opacity: 0;
 	visibility: hidden;
 	z-index: 1000;
-  }
+}
 
-  i.fas.fa-chevron-up{
-	  text-align: center;
-	  font-size: 30px;
-	  margin-top: 10px;
-	  color: #fff;
-  }
-  #button:hover {
+i.fas.fa-chevron-up {
+	text-align: center;
+	font-size: 30px;
+	margin-top: 10px;
+	color: #fff;
+}
+
+#button:hover {
 	cursor: pointer;
 	background-color: #CE1B75;
-  }
-  #button:active {
+}
+
+#button:active {
 	background-color: #CE1B75;
-  }
-  #button.show {
+}
+
+#button.show {
 	opacity: 1;
 	visibility: visible;
-  }
-  
-  /* Styles for the content section */
-  
-  
-  @media (min-width: 500px) {
+}
+
+@media (min-width: 500px) {
 	.content {
-	  width: 43%;
+		width: 43%;
 	}
 	#button {
-	  margin: 30px;
+		margin: 30px;
 	}
-  }
+}
+
 div.col-sm-12.col-md-12.col-lg-12.oNama {
 	background-color: #CE1B75;
 	padding: 10px;
@@ -359,5 +357,8 @@ h4.h4 {
 img.img-fluid.zgrada {
 	margin-top: 63px;
 	margin-bottom: 20px;
-	
+}
+
+ul li.style {
+	padding-bottom: 10px;
 }
