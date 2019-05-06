@@ -362,3 +362,19 @@ img.img-fluid.zgrada {
 ul li.style {
 	padding-bottom: 10px;
 }
+
+div.col-sm-12.col-md-12.col-lg-12.media {
+	margin-left: 20px;
+	margin-top: 30px;
+}
+
+.fab.fa-github {
+	color: #CE1B75;
+	font-size: 40px;
+}
+
+.fab.fa-linkedin {
+	color: #CE1B75;
+	font-size: 40px;
+	padding-left: 20px;
+}
